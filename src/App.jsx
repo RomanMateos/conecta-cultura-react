@@ -1,3 +1,4 @@
+import PiePagina from "./components/PiePagina";
 import Navegacion from "./components/Navegacion";
 import Bienvenida from "./components/Bienvenida";
 import Cabecera from "./components/Cabecera";
@@ -14,8 +15,15 @@ function App() {
           <div className="col-12 col-md-6 col-lg-4">
             <TarjetaActividad />
           </div>
+          <div className="col-12 col-md-6 col-lg-4">
+            <TarjetaActividad />
+          </div>
+          <div className="col-12 col-md-6 col-lg-4">
+            <TarjetaActividad />
+          </div>
         </div>
       </main>
+      <PiePagina />
     </>
   );
 }

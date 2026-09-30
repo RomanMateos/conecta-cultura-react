@@ -1,3 +1,4 @@
+import MisInscripciones from "./pages/MisInscripciones";
 import PiePagina from "./components/PiePagina";
 import { useEffect, useState } from "react";
 import Cabecera from "./components/Cabecera";
@@ -45,8 +46,14 @@ function App() {
           <option>Todas</option>
           <option>Música</option>
           <option>Artes visuales</option>
+          <option>Danza</option>
+          <option>Gastronomía</option>
         </select>
         <Cartelera actividades={visibles} onInscribir={inscribir} />
+        <MisInscripciones
+          inscripciones={inscripciones}
+          onEliminar={eliminarInscripcion}
+        />
       </main>
       <PiePagina />
     </>
